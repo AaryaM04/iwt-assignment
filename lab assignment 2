@@ -1,13 +1,121 @@
+Code:
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Assignment 2</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seminar Schedule</title>
+<style>
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+table, th, td {
+border: 2px solid black;
+}
+th, td {
+padding: 10px;
+text-align: center;
+}
+th {
+background-color: #008080;
+color: white;
+}
+td.day {
+background-color: #00CED1;
+font-weight: bold;
+}
+td.time {
+background-color: #FF8C00;
+
+color: black;
+}
+td.end {
+background-color: #0000CD;
+color: white;
+}
+td.topic {
+background-color: #66CDAA;
+color: black;
+}
+</style>
 </head>
 <body>
-    <h1>Lab Assignment 2</h1>
-    <p>This is the content for Lab Assignment 2.</p>
-   
+<table>
+<tr>
+<th rowspan="2">day</th>
+<th colspan="2">schedule</th>
+<th rowspan="2">topic</th>
+</tr>
+<tr>
+<th>begin</th>
+<th>end</th>
+</tr>
+<tr>
+<td class="day">Monday</td>
+
+<td class="time">8:00 a.m.</td>
+<td class="end">10:00 a.m.</td>
+<td class="topic">Introduction to XML</td>
+</tr>
+<tr>
+<td class="day"></td>
+<td class="time">11:00 a.m.</td>
+<td class="end">1:00 p.m.</td>
+<td class="topic">Validity: DTD and Relax NG</td>
+</tr>
+<tr>
+<td class="day"></td>
+<td class="time">2:00 p.m.</td>
+<td class="end">4:00 p.m.</td>
+<td class="topic">XPath</td>
+</tr>
+<tr>
+<td class="day">Tuesday</td>
+<td class="time">8:00 a.m.</td>
+<td class="end">10:00 a.m.</td>
+<td class="topic">XSL Transformactics</td>
+</tr>
+<tr>
+<td class="day"></td>
+<td class="time">11:00 a.m.</td>
+
+<td class="end">1:00 p.m.</td>
+<td class="topic">XSL Formatting Objects</td>
+</tr>
+<tr>
+<td class="day">Wednesday</td>
+<td class="time">8:00 a.m.</td>
+<td class="end">10:00 a.m.</td>
+<td class="topic">Introduction to XML</td>
+</tr>
+<tr>
+<td class="day"></td>
+<td class="time">11:00 a.m.</td>
+<td class="end">1:00 p.m.</td>
+<td class="topic">Validity: DTD and Relax NG</td>
+</tr>
+<tr>
+<td class="day"></td>
+<td class="time">2:00 p.m.</td>
+<td class="end">4:00 p.m.</td>
+<td class="topic">XPath</td>
+</tr>
+<tr>
+<td class="day">Thursday</td>
+<td class="time">8:00 a.m.</td>
+<td class="end">10:00 a.m.</td>
+
+<td class="topic">XSL Transformactics</td>
+</tr>
+<tr>
+<td class="day">Friday</td>
+<td class="time">8:00 a.m.</td>
+<td class="end">10:00 a.m.</td>
+<td class="topic">XSL Formatting Objects</td>
+</tr>
+</table>
 </body>
 </html>
