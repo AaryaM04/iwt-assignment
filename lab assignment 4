@@ -1,13 +1,279 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Assignment 4</title>
-</head>
-<body>
-    <h1>Lab Assignment 4</h1>
-    <p>This is the content for Lab Assignment 4.</p>
-  
-</body>
-</html>
+Code: index.html
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Main Page&lt;/title&gt;
+&lt;style&gt;
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+color: #333;
+margin: 0;
+padding: 0;
+}
+h1 {
+background-color: #008080;
+color: white;
+padding: 20px;
+border-radius: 0 0 10px 10px;
+margin: 0;
+}
+
+.link-container {
+margin: 20px auto;
+max-width: 600px;
+}
+.link-container a {
+display: block;
+margin: 15px 0;
+padding: 15px;
+text-decoration: none;
+color: white;
+background: linear-gradient(135deg, #ff7e5f, #feb47b);
+border-radius: 8px;
+font-size: 20px;
+transition: background 0.3s ease, transform 0.3s ease;
+}
+.link-container a:hover {
+background: linear-gradient(135deg, #feb47b, #ff7e5f);
+transform: scale(1.05);
+}
+.link-container a:active {
+transform: scale(0.98);
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Welcome to the web page&lt;/h1&gt;
+&lt;div class=&quot;link-container&quot;&gt;
+&lt;a href=&quot;table.html&quot;&gt;View the Seminar Schedule Table&lt;/a&gt;
+&lt;a href=&quot;image.html&quot;&gt;View the Images&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Code:table.html
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Seminar Schedule&lt;/title&gt;
+&lt;style&gt;
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+table, th, td {
+border: 2px solid black;
+}
+th, td {
+padding: 10px;
+text-align: center;
+}
+th {
+background-color: #008080;
+color: white;
+
+}
+td.day {
+background-color: #00CED1;
+font-weight: bold;
+}
+td.time {
+background-color: #FF8C00;
+color: black;
+}
+td.end {
+background-color: #0000CD;
+color: white;
+}
+td.topic {
+background-color: #66CDAA;
+color: black;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Seminar Schedule&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th rowspan=&quot;2&quot; scope=&quot;col&quot;&gt;Day&lt;/th&gt;
+&lt;th colspan=&quot;2&quot; scope=&quot;colgroup&quot;&gt;Schedule&lt;/th&gt;
+&lt;th rowspan=&quot;2&quot; scope=&quot;col&quot;&gt;Topic&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+
+&lt;th scope=&quot;col&quot;&gt;Begin&lt;/th&gt;
+&lt;th scope=&quot;col&quot;&gt;End&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;day&quot;&gt;Monday&lt;/td&gt;
+&lt;td class=&quot;time&quot;&gt;8:00 a.m.&lt;/td&gt;
+&lt;td class=&quot;end&quot;&gt;10:00 a.m.&lt;/td&gt;
+&lt;td class=&quot;topic&quot;&gt;Introduction to XML&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;day&quot;&gt;&lt;/td&gt;
+&lt;td class=&quot;time&quot;&gt;11:00 a.m.&lt;/td&gt;
+&lt;td class=&quot;end&quot;&gt;1:00 p.m.&lt;/td&gt;
+&lt;td class=&quot;topic&quot;&gt;Validity: DTD and Relax NG&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;day&quot;&gt;&lt;/td&gt;
+&lt;td class=&quot;time&quot;&gt;2:00 p.m.&lt;/td&gt;
+&lt;td class=&quot;end&quot;&gt;4:00 p.m.&lt;/td&gt;
+&lt;td class=&quot;topic&quot;&gt;XPath&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;day&quot;&gt;Tuesday&lt;/td&gt;
+&lt;td class=&quot;time&quot;&gt;8:00 a.m.&lt;/td&gt;
+&lt;td class=&quot;end&quot;&gt;10:00 a.m.&lt;/td&gt;
+&lt;td class=&quot;topic&quot;&gt;XSL Transformactics&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&quot;day&quot;&gt;&lt;/td&gt;
+&lt;td class=&quot;time&quot;&gt;11:00 a.m.&lt;/td&gt;
+&lt;td class=&quot;end&quot;&gt;1:00 p.m.&lt;/td&gt;
+&lt;td class=&quot;topic&quot;&gt;XSL Formatting Objects&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;day&quot;&gt;Wednesday&lt;/td&gt;
+&lt;td class=&quot;time&quot;&gt;8:00 a.m.&lt;/td&gt;
+&lt;td class=&quot;end&quot;&gt;10:00 a.m.&lt;/td&gt;
+&lt;td class=&quot;topic&quot;&gt;Introduction to XML&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;day&quot;&gt;&lt;/td&gt;
+&lt;td class=&quot;time&quot;&gt;11:00 a.m.&lt;/td&gt;
+&lt;td class=&quot;end&quot;&gt;1:00 p.m.&lt;/td&gt;
+&lt;td class=&quot;topic&quot;&gt;Validity: DTD and Relax NG&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;day&quot;&gt;&lt;/td&gt;
+&lt;td class=&quot;time&quot;&gt;2:00 p.m.&lt;/td&gt;
+&lt;td class=&quot;end&quot;&gt;4:00 p.m.&lt;/td&gt;
+&lt;td class=&quot;topic&quot;&gt;XPath&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;day&quot;&gt;Thursday&lt;/td&gt;
+&lt;td class=&quot;time&quot;&gt;8:00 a.m.&lt;/td&gt;
+&lt;td class=&quot;end&quot;&gt;10:00 a.m.&lt;/td&gt;
+&lt;td class=&quot;topic&quot;&gt;XSL Transformactics&lt;/td&gt;
+
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;day&quot;&gt;Friday&lt;/td&gt;
+&lt;td class=&quot;time&quot;&gt;8:00 a.m.&lt;/td&gt;
+&lt;td class=&quot;end&quot;&gt;10:00 a.m.&lt;/td&gt;
+&lt;td class=&quot;topic&quot;&gt;XSL Formatting Objects&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;a href=&quot;index.html&quot;&gt;Back to Main Page&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Code:image.html
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Clickable Image&lt;/title&gt;
+&lt;style&gt;
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+background-color: #f0f8ff;
+margin: 0;
+padding: 0;
+
+}
+h1 {
+background-color: #008080;
+color: white;
+padding: 20px;
+margin: 0;
+}
+.clickable {
+position: absolute;
+background: rgba(255, 255, 255, 0);
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Clickable Image&lt;/h1&gt;
+&lt;div style=&quot;position: relative; display: inline-block;&quot;&gt;
+&lt;img src=&quot;your-image.jpg&quot; alt=&quot;Clickable Image&quot; style=&quot;width: 100%; max-width: 800px;&quot;&gt;
+&lt;a href=&quot;description.html&quot; class=&quot;clickable&quot; style=&quot;top:50px; left:100px; width:100px; height:100px;
+position:absolute;&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;a href=&quot;index.html&quot;&gt;Back to Main Page&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Code:description.html
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Gut Health and Skin&lt;/title&gt;
+&lt;style&gt;
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+background-color: #f0f8ff;
+margin: 0;
+padding: 0;
+}
+h1 {
+background-color: #008080;
+color: white;
+padding: 20px;
+margin: 0;
+}
+p {
+margin: 20px auto;
+max-width: 600px;
+line-height: 1.6;
+}
+a {
+display: inline-block;
+margin-top: 20px;
+padding: 10px 20px;
+text-decoration: none;
+color: white;
+
+background-color: #008080;
+border-radius: 5px;
+}
+a:hover {
+background-color: #005757;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Description of the Image&lt;/h1&gt;
+&lt;p&gt;The picture illustrates the benefits of healing the gut. It highlights positive impacts on mood, skin, inflammation, disease
+risk, allergies, food sensitivities, anxiety, depression, energy, cognitive function, and the immune system.&lt;/p&gt;
+&lt;a href=&quot;image.html&quot;&gt;Back to Image&lt;/a&gt;
+&l;/body&gt;
+&lt;
+/html&gt;
+
+
+
+
+
