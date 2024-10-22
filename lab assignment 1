@@ -1,13 +1,114 @@
+Code:
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Assignment 1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Aarya Mallick's Portfolio</title>
+<link rel="icon"
+href="https://via.placeholder.com/16x16.png?text=AM"
+type="image/png">
+<style>
+body {
+
+background-color: #ffccff; /* Light pink
+background */
+font-family: Arial, sans-serif;
+}
+
+.container {
+width: 80%;
+margin: 40px auto;
+padding: 20px;
+background-color: #fff;
+border: 1px solid #ddd;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+background-color: #ff69b4; /* Pink header
+background */
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+
+.header h1 {
+margin: 0;
+}
+
+.moving-text {
+font-size: 24px;
+font-weight: bold;
+color: #ff69b4; /* Pink text color */
+animation: move 5s infinite;
+}
+
+@keyframes move {
+0% {
+transform: translateX(0);
+}
+50% {
+transform: translateX(100px);
+}
+100% {
+transform: translateX(0);
+}
+}
+</style>
 </head>
 <body>
-    <h1>Lab Assignment 1</h1>
-    <p>This is the content for Lab Assignment 1.</p>
-   
+<div class="container">
+<div class="header">
+<h1>Aarya Mallick's Portfolio</h1>
+</div>
+
+<marquee class="moving-text">Welcome to my
+portfolio</marquee>
+<h1>About Me</h1>
+<p>I'm Aarya Mallick, a passionate individual with a
+keen interest in technology and innovation.</p>
+<hr>
+<h2>Education</h2>
+<p>I'm currently pursuing my studies in Computer
+Science.</p>
+<br>
+<h3>Skills</h3>
+<ul>
+<li>Programming languages: Python, Java,
+JavaScript</li>
+<li>Web development: HTML, CSS, React</li>
+<li>Database management: MySQL, MongoDB</li>
+</ul>
+<h4>Experience</h4>
+<p>I've worked on several projects, including a web
+scraper using Python and a to-do list app using React.</p>
+<pre>
+<code>
+# Example code
+def greet(name):
+print(f"Hello, {name}!")
+</code>
+</pre>
+
+<h5>Achievements</h5>
+<p>I've participated in several coding competitions
+and achieved a decent ranking.</p>
+<h6>Contact Me</h6>
+<p>Email: <a
+href="mailto:aaryamallik43@gmail.com">aaryamallik43@gmail.com
+</a></p>
+<p>Phone: <del>1234567890</del> (Not available)</p>
+<p>Address: <strike>123 Main St, Anytown,
+USA</strike> (Not available)</p>
+<p>Follow me on social media: <b>Twitter</b>,
+<sub>Facebook</sub>, <sup>Instagram</sup></p>
+<ol>
+<li>Twitter: <a href="#">@aaryamallick</a></li>
+<li>Facebook: <a href="#">@aaryamallick</a></li>
+<li>Instagram: <a href="#">@aaryamallick</a></li>
+</ol>
+</div>
 </body>
 </html>
